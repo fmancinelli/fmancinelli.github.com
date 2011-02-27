@@ -1,0 +1,24 @@
+---
+layout: default
+---
+{% for post in site.posts limit:1 %}
+<article class="post">
+  <header>
+    <h1><a href="{{post.url}}">{{post.title}}</a></h1>
+    <h2>Posted on {{post.date | date_to_string}}</h2>
+  </header>
+                
+  {{post.content}}
+
+  <footer>
+    <a href="{{post.url}}">See comments</a>
+  </footer>             
+</article>
+{% endfor %}
+
+<h1>All blog posts</h1>
+<ul>
+  {% for post in site.posts %}
+   <li><span class="gray">{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+</ul>

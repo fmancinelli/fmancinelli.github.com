@@ -1,0 +1,119 @@
+header { display: block; }
+footer { display: block; }
+section { display: block; }
+article { display: block; }
+
+body {
+    font-family: 'Cardo'; /*, 'URW Palladio L', 'Droid Sans';*/
+    color: #2E302B;
+    background: #FFF8D0;
+    margin: 0.5em auto;
+}    
+
+a:link {
+    color: #733027;
+}
+
+a:visited {
+    color: #733027;
+}
+
+h1 > a:link {
+    text-decoration: none;
+}
+
+h1 > a:hover {
+    text-decoration: underline;
+}
+
+header#page_header  {
+    width: 700px;              
+    text-align: center;
+    margin: 0 auto 2em auto;
+    padding: 0 0 0.5em 0;
+    border-bottom: 1px solid #C8C8C8
+}
+
+header#page_header > h1 {
+    font-size: 32pt;
+    color: #733027;
+    margin: 0;
+    padding: 0;
+}
+
+header#page_header > h2 {
+    font-size: 12pt;
+    color: #9F8158;
+    margin: 0;
+    padding: 0;
+}
+
+footer#page_footer {
+    color: #FFF7C0;
+    background: #733037;
+    height: 240px;
+}
+
+footer#page_footer > .content {
+    font-size: 10pt;
+    width: 900px;
+    margin: 0 auto;
+    padding-top: 2em;
+}
+
+footer#page_footer a:link {
+    color: #FFF7C0;
+}
+
+footer#page_footer a:visited {
+    color: #FFF7C0;
+}
+
+section#main {
+    width: 680px;
+    margin: 0 auto;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+section#main > h1 {
+    font-size: 18pt;
+    color: #733027;
+} 
+
+article.post {
+    font-size: 12pt;    
+    margin-bottom: 2em;
+    border-bottom: 1px solid #C8C8C8;
+}
+
+article.post > header > h1 {
+    font-size: 18pt;
+    color: #733027;
+    margin: 0;
+    padding: 0;
+}
+
+article.post > header > h2 {
+    font-size: 10pt;
+    font-weight: normal;
+    color: #9F8158;
+    margin: 0.5em 0;
+    padding: 0;
+}
+
+article.post > footer {
+    margin-bottom: 1em;
+}
+
+article.post img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    border: 1px solid #C8C8C8;
+}
+
+.gray {
+    color: #A0A0A0;
+}
