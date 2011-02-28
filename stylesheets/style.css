@@ -103,6 +103,7 @@ article.post > header > h2 {
 }
 
 article.post > footer {
+    border-top: 1px solid #C8C8C8;
     margin-bottom: 1em;
 }
 
