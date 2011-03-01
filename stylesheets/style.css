@@ -83,7 +83,7 @@ section#main > h1 {
 
 article.post {
     font-size: 12pt;    
-    margin-bottom: 2em;
+    margin-bottom: 4em;
     border-bottom: 1px solid #C8C8C8;
 }
 
@@ -102,8 +102,12 @@ article.post > header > h2 {
     padding: 0;
 }
 
+article.post > header > h3 {
+    margin: 0;
+    padding: 0;
+}
+
 article.post > footer {
-    border-top: 1px solid #C8C8C8;
     margin-bottom: 1em;
 }
 
@@ -113,6 +117,10 @@ article.post img {
     margin-right: auto;
     padding: 5px;
     border: 1px solid #C8C8C8;
+}
+
+div#disqus_thread {
+    border-top: 1px solid #C8C8C8;
 }
 
 .gray {

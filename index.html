@@ -1,11 +1,12 @@
 ---
 layout: default
 ---
-{% for post in site.posts limit:1 %}
+{% for post in site.posts limit:2 %}
 <article class="post">
   <header>
     <h1><a href="{{post.url}}">{{post.title}}</a></h1>
     <h2>Posted on {{post.date | date_to_string}}</h2>
+    <h3><h3><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="fmancinelli">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></h3>
   </header>
                 
   {{post.content}}
@@ -16,9 +17,9 @@ layout: default
 </article>
 {% endfor %}
 
-<h1>All blog posts</h1>
+<h1>Older posts</h1>
 <ul>
-  {% for post in site.posts %}
+  {% for post in site.posts offset:2 %}
    <li><span class="gray">{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
 </ul>
