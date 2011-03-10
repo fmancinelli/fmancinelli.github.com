@@ -18,6 +18,10 @@ a:visited {
     color: #733027;
 }
 
+code {
+  font-size: 11pt;
+}
+
 h1 > a:link {
     text-decoration: none;
 }
@@ -109,6 +113,16 @@ article.post > header > h3 {
 
 article.post > footer {
     margin-bottom: 1em;
+}
+
+article.post > h1 {
+    font-size: 16pt;
+    color: #733027;
+}
+
+article.post > h2 {
+    font-size: 12pt;
+    color: #733027;
 }
 
 article.post img {
