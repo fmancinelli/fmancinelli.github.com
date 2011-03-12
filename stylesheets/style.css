@@ -31,7 +31,7 @@ h1 > a:hover {
 }
 
 header#page_header  {
-    width: 700px;              
+    width: 750px; 
     text-align: center;
     margin: 0 auto 2em auto;
     padding: 0 0 0.5em 0;
@@ -74,7 +74,7 @@ footer#page_footer a:visited {
 }
 
 section#main {
-    width: 680px;
+    width: 730px;
     margin: 0 auto;
     line-height: 1.5em;
     text-align: justify;
