@@ -1,0 +1,27 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>Bitloom</title>
+ <link href="http://blog.fabiomancinelli.org/atom.xml" rel="self"/>
+ <link href="http://blog.fabiomancinelli.org/"/>
+ <updated>{{ site.time | date_to_xmlschema }}</updated>
+ <id>http://blog.fabiomancinelli.org/</id>
+ <author>
+   <name>Fabio Mancinelli</name>
+   <email>fm@fabiomancinelli.org</email>
+ </author>
+
+ {% for post in site.posts limit:2 %}
+ <entry>
+   <title>{{ post.title }}</title>
+   <link href="http://blog.fabiomancinelli.org{{ post.url }}"/>
+   <updated>{{ post.date | date_to_xmlschema }}</updated>
+   <id>http://blog.fabiomancinelli.org{{ post.id }}</id>
+   <content type="html">{{ post.content | xml_escape }}</content>
+ </entry>
+ {% endfor %}
+ 
+</feed>
