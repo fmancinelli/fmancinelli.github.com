@@ -5,16 +5,17 @@ layout: default
   <header>
     <h1>{{page.title}}</h1>
     <h2>Posted on {{page.date | date_to_string}} | <a href="/">Back to Bitloom home</a></h2>
-    <h3><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="fmancinelli">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script> {% if page.flattr %}<a href="{{page.flattr}}" target="_blank"><img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" style="display: inline; border: 0; padding: 0px"/></a>{% endif %}</h3>    
-    
   </header>
                 
   {{content}}
                 
   <footer>
-    <div style="margin-top: 3em; text-align: right">
+    <div style="margin-top: 2em; vertical-align: middle">
+      <g:plusone size="medium"></g:plusone><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="fmancinelli">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>{% if page.flattr %}<a href="{{page.flattr}}" target="_blank"><img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" style="display: inline; border: 0; padding: 0px"/></a>{% endif %}
+    </div>
+    <div style="margin-top: 2em; text-align: right; vertical-align: middle">
       <a href="/">Back to Bitloom home</a>
-    <div>
+    </div>
     <a name="comments"/>
     <div id="disqus_thread"></div>
     <script type="text/javascript">
