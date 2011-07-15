@@ -1,30 +1,42 @@
+/*
+ * blog.fabiomancinelli.org CSS stylesheet
+ * (C) 2011 by Fabio Mancinelli <fm@fabiomancinelli.org>
+ *
+ * This work is licensed under a Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0) License.
+ * http://creativecommons.org/licenses/by-sa/3.0/
+ */
+
+/*********************************************************
+ * Enabling HTML5 tags for browsers non supporting HTML5 *
+ *********************************************************/
 header { display: block; }
 footer { display: block; }
 section { display: block; }
 article { display: block; }
 
+/*******************
+ * Generic styling *
+ *******************/
 body {
-    font-family: 'Quattrocento Sans'; /*, 'URW Palladio L', 'Droid Sans';*/
-    color: #2E302B;
-    background: #F4F3EB;
-    margin: 0.5em auto;
-}    
+    background: #FFFFFF url(/images/top-grad.png) repeat-x;
+    font-family: "Quattrocento Sans";
+    margin: 0px;
+    padding: 0px;
+}
 
 a:link {
-    color: #733027;
+    color: #21759B;
+    text-decoration: none;
 }
+
+a:hover {
+    color: #21759B;
+    text-decoration: underline;
+}
+
 
 a:visited {
-    color: #733027;
-}
-
-code {
-  font-size: 9pt;
-}
-
-/* Pygments highlighted code size */
-pre > code {
-  font-size: 9pt;
+    color: #21759B;
 }
 
 h1 > a:link {
@@ -35,112 +47,142 @@ h1 > a:hover {
     text-decoration: underline;
 }
 
-header#page_header  {
-    width: 950px;
-    text-align: center;
-    margin: 0 auto 2em auto;
-    padding: 0 0 0.5em 0;
-    border-bottom: 1px solid #C8C8C8
-}
-
-header#page_header > h1 {
-    font-size: 32pt;
-    color: #733027;
-    margin: 0;
-    padding: 0;
-    text-shadow: 1px 1px white;
-}
-
-header#page_header > h2 {
-    font-size: 12pt;
-    color: #9F8158;
-    margin: 0;
-    padding: 0;
-    text-shadow: 1px 1px white;
-}
-
-footer#page_footer {
-    color: #FFF7C0;
-    background: #733037;
-    height: 240px;
-}
-
-footer#page_footer > .content {
-    font-size: 10pt;
-    width: 950px;
-    margin: 0 auto;
-    padding-top: 2em;
-}
-
-footer#page_footer a:link {
-    color: #FFF7C0;
-}
-
-footer#page_footer a:visited {
-    color: #FFF7C0;
-}
-
-section#main {
+/*****************************************************************************************
+ * The div that wraps all the content and defines the site width (except for the footer) *
+ *****************************************************************************************/
+#wrapper {
+    margin: 0px auto 0px;
     width: 900px;
-    margin: 0 auto;
+}
+
+
+/****************************
+ * Style for the top header *
+ ****************************/
+header#page_header {
+    margin-bottom: 50px;
+}
+
+header#page_header h1 {
+    color: #21759B;
+    font-family: Georgia;
+    font-size: 32pt;
+    font-weight: normal;
+    margin-bottom: 0px;
+    text-shadow: 1px 1px #E0E0E0;
+}
+
+header#page_header h2 {
+    color: #9F8158;
+    font-size: 12pt;
+    font-weight: normal;
+    margin-top: -7px;
+    text-shadow: 1px 1px #E0E0E0;
+}
+
+/*********************************************
+ * Style for the post index in the home page *
+ *********************************************/
+section#posts {
+    color: #202020;
     line-height: 1.3em;
     text-align: justify;
 }
 
-section#main > h1 {
-    font-size: 18pt;
-    color: #733027;
-} 
+section#posts ul
+{
+    list-style-type: diamond;
+    margin-bottom: 100px;
+}
 
-article.post {
+section#posts li
+{
+    margin-bottom: 20px;
+    color: #606060;
     font-size: 11pt;
-    margin-bottom: 4em;
-    border-bottom: 1px solid #C8C8C8;
 }
 
-article.post > header > h1 {
-    font-size: 18pt;
-    color: #733027;
-    margin: 0;
-    padding: 0;
-    text-shadow: 1px 1px white;
+section#posts h1 {
+    color: #21759B;
+    font-family: Georgia;
+    font-size: 20pt;
+    font-weight: normal;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px #E0E0E0;
 }
 
-article.post > header > h2 {
+section#posts h2 {
+    color: #21759B;
+    font-family: Georgia;
+    font-size: 14pt;
+    font-weight: normal;
+    margin: 0px;
+    text-shadow: 1px 1px #E0E0E0;
+}
+
+section#posts h3 {
+    color: #9F8158 ;
+    font-family: "Quattrocento Sans";
     font-size: 10pt;
     font-weight: normal;
+    margin-top: -5px;
+    text-shadow: 1px 1px #E0E0E0;
+}
+
+/***************************
+ * Style for a single post *
+ ***************************/
+article.post {
+    font-size: 11pt;
+    line-height: 1.4em;
+    margin-bottom: 4em;
+    text-align: justify;
+}
+
+article.post header {
+    margin-bottom: 2em;
+}
+
+article.post header h1 {
+    color: #21759B;
+    font-family: Georgia;
+    font-size: 20pt;
+    font-weight: normal;
+    margin-bottom: 5px;
+    text-shadow: 1px 1px #E0E0E0;
+}
+
+article.post header h2 {
     color: #9F8158;
-    margin: 0.5em 0;
-    padding: 0;
-    text-shadow: 1px 1px white;
-}
-
-article.post > header > h3 {
-    margin: 0;
-    padding: 0;
-    text-shadow: 1px 1px white;
-}
-
-article.post > footer {
-    margin-bottom: 1em;
-}
-
-article.post > h1 {
-    font-size: 14pt;
-    color: #733027;
-    text-shadow: 1px 1px white;
-}
-
-article.post > h2 {
-    font-size: 12pt;
-    color: #733027;
-    text-shadow: 1px 1px white;
-}
-
-article.post > h3 {
+    font-family: "Quattrocento Sans";
     font-size: 10pt;
-    color: #733027;
-    text-shadow: 1px 1px white;
+    font-weight: normal;
+    margin: 0px;
+    text-shadow: 1px 1px #E0E0E0;
+}
+
+article.post h1 {
+    color: #21759B;
+    font-family: Georgia;
+    font-size: 13pt;
+    font-weight: normal;
+    text-shadow: 1px 1px  #E0E0E0;
+}
+
+article.post h2 {
+    color: #21759B;
+    font-family: Georgia;
+    font-size: 12pt;
+    font-weight: normal;
+    text-shadow: 1px 1px #E0E0E0;
+}
+
+article.post h3 {
+    color: #21759B;
+    font-family: Georgia;
+    font-size: 10pt;
+    font-weight: normal;
+    text-shadow: 1px 1px #E0E0E0;
 }
 
 article.post img {
@@ -151,10 +193,43 @@ article.post img {
     border: 1px solid #C8C8C8;
 }
 
+/* Disqus comments styling */
 div#disqus_thread {
     border-top: 1px solid #C8C8C8;
+    margin-top: 10px;
 }
 
-.gray {
-    color: #A0A0A0;
+/*****************************
+ * Style for the page footer *
+ *****************************/
+footer#page_footer {
+    background-color: #21759B;
+    height: 350px;
+    padding: 30px 20px 0px 0px;
+    text-align: right;
 }
+
+footer#page_footer a:link {
+    color: #FFFFFF;
+}
+
+footer#page_footer a:visited {
+    color: #FFFFFF;
+}
+
+footer#page_footer h1 {
+    color: #FFFFFF;
+    font-weight: normal;
+    font-size: 11pt;
+    margin: 0px;
+    text-shadow: 1px 1px #808080;
+}
+
+footer#page_footer h2 {
+    color: #FFFFFF;
+    font-weight: normal;
+    font-size: 10pt;
+    margin: 0px;
+    text-shadow: 1px 1px #808080;
+}
+
