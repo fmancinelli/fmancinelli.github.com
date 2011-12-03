@@ -19,9 +19,14 @@ article { display: block; }
  *******************/
 body {
     background: #FFFFFF url(/images/top-grad.png) repeat-x;
-    font-family: "Quattrocento Sans";
+    font-family: "PT Serif";
     margin: 0px;
     padding: 0px;
+}
+
+code {
+  font-family: "Monospace";
+  font-size: 10pt;
 }
 
 a:link {
@@ -122,7 +127,7 @@ section#posts h2 {
 
 section#posts h3 {
     color: #9F8158 ;
-    font-family: "Quattrocento Sans";
+    font-family: "PT Serif";
     font-size: 10pt;
     font-weight: normal;
     margin-top: -5px;
@@ -154,7 +159,7 @@ article.post header h1 {
 
 article.post header h2 {
     color: #9F8158;
-    font-family: "Quattrocento Sans";
+    font-family: "PT Serif";
     font-size: 10pt;
     font-weight: normal;
     margin: 0px;
