@@ -7,7 +7,7 @@ Before starting this blog I had another attempt at blogging. What I was looking 
 
 Basically I wanted to keep my blog locally on my hard disk, with all the posts available in plain/text and organized using some directory structure. I was looking for a system that allowed me to write posts by using `vi` or `emacs` or whatever plain/text editor I was comfortable with, without having to use any fancy WYSIWYG editors on the web (yes, I am a pretty old-school person)
 
-I ended up coding it by myself. The result was [FSBlogR](https://bitbucket.org/bitloom/fsblogr/wiki/Home). A small CGI script written in Ruby that was able to serve the content of a directory structure (that represented a category hierarchy) as if it was a blog with all its posts.
+I ended up coding it by myself. The result was [FSBlogR](https://github.com/fmancinelli/FSBlogR). A small CGI script written in Ruby that was able to serve the content of a directory structure (that represented a category hierarchy) as if it was a blog with all its posts.
 
 *FSBlogR* implemented exactly what I was looking for: my posts were stored in plain/text on my local disk, I was able to edit them using my favorite editor, and publishing a new post was just a matter of doing an `rsync` to a remote host.
 
