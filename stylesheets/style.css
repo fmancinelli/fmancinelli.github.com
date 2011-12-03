@@ -138,7 +138,7 @@ section#posts h3 {
  * Style for a single post *
  ***************************/
 article.post {
-    font-size: 11pt;
+    font-size: 13pt;
     line-height: 1.4em;
     margin-bottom: 4em;
     text-align: justify;
@@ -151,7 +151,7 @@ article.post header {
 article.post header h1 {
     color: #21759B;
     font-family: Georgia;
-    font-size: 20pt;
+    font-size: 24pt;
     font-weight: normal;
     margin-bottom: 5px;
     text-shadow: 1px 1px #E0E0E0;
@@ -169,7 +169,7 @@ article.post header h2 {
 article.post h1 {
     color: #21759B;
     font-family: Georgia;
-    font-size: 13pt;
+    font-size: 18pt;
     font-weight: normal;
     text-shadow: 1px 1px  #E0E0E0;
 }
@@ -177,7 +177,7 @@ article.post h1 {
 article.post h2 {
     color: #21759B;
     font-family: Georgia;
-    font-size: 12pt;
+    font-size: 16pt;
     font-weight: normal;
     text-shadow: 1px 1px #E0E0E0;
 }
@@ -185,7 +185,7 @@ article.post h2 {
 article.post h3 {
     color: #21759B;
     font-family: Georgia;
-    font-size: 10pt;
+    font-size: 14pt;
     font-weight: normal;
     text-shadow: 1px 1px #E0E0E0;
 }
