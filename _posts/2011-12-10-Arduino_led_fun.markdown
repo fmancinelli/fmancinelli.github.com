@@ -9,7 +9,7 @@ In this post I'll document my first experiment with this platform. This is usefu
 
 The experiment consisted in lighting up a set of color leds using different patterns that can be selected (cycled-through) by using a button.
 
-This is the electrical schema of what the I built:
+This is the electrical schema of what I built:
 
 ![Electrical schema](/images/arduino_led_fun_schema.png)
 
@@ -154,25 +154,25 @@ void loop() {
 
 This has been quite challenging... After a lot of years spent on programming with high level languages, I had to switch my brain back to the times where the only data structure available was the array.
 
-I used the `pattern_data` array to define the led configurations for each step of a pattern. A pattern can be thought as an animation where, at each step, leds are lit up in a different way.
+I used the `pattern_data` array to define the led configurations for each step of a pattern. A pattern can be thought as an animation where, at each step, leds are lit up in a different way (configuration).
 
 The `pattern_data` contains **all** the steps for **all** the patterns (in a high level language I would have created a `Map` from a pattern name to a `List` of `LedConfigurations`... but here we simply can't. Not easily at least)
 
 The `pattern` array is used to define where a pattern starts and ends. Basically it's a multidimensional array where each element is, again, an array of two `int`s defining the start and end index in the `pattern_data` array. The length of the `pattern` array gives the number of patterns defined in the program (in this case 5)
 
-So, for example, the first pattern `pattern[0]` starts at index `0`, and ends at index `0`. The led configuration for this only step is *"everything off"*.
+So, for example, the first pattern `pattern[0]` starts at index `0`, and ends at index `0`. The led configuration for this  step is *"everything off"*.
 
-By having the start and end index we can also compute the pattern length in steps. For example `pattern[1]` starts at index `1` and ends at index `5` for a total of 5 steps.
+By having the start and end index it's easy to compute the pattern length in steps. For example `pattern[1]` starts at index `1` and ends at index `5` for a total of 5 steps.
 
 The main loop is straightforward.
 
-I use the `counter` variable as a global clock for understanding which pattern step I have to render. By knowing how many steps a pattern is made of, a simple modulo operation will give us the current step index, and thus the corresponding led configuration. Then it's just a matter of iterating on this configuration and set the pin values.
+I use the `counter` variable as a global clock for understanding which pattern step I have to render. By knowing how many steps a pattern is made of, a simple modulo operation will give us the current step index, and thus the corresponding led configuration. Then it's just a matter of iterating on this configuration and set the corresponding pin values.
 
-At each iteration we wait for an interval defined in the `delay_length` variable to slow things down a bit, otherwise the leds would be lit up and down too fast.
+At each iteration I wait for an interval defined in the `delay_length` variable to slow things down a bit, otherwise the leds would be lit up and down too fast.
 
-The `if` statement at the beginning of the `loop` function is used to avoid to continuously changing the pattern if the button is kept pressed. The `current_pattern_changed` is set to `1` the first time the pattern is changed. In this way the if block will not be executed on the next iterations if the `button_state` continues to be `LOW`, i.e., pressed. 
+The `if` statement at the beginning of the `loop` function is used to avoid to continuously changing the pattern if the button is kept pressed. The `current_pattern_changed` variable is set to `1` the first time the pattern is changed. In this way the if block will not be executed on the next iterations if the `button_state` continues to be `LOW`, i.e., pressed. 
 
-When the button is released, then the `current_pattern_changed` is reset to `0` making it possible to change the pattern the next time it is pressed.
+When the button is released, then `current_pattern_changed` is reset to `0` making it possible to change the pattern the next time it is pressed.
 
 The code should be easily extensible if you add more leds. It's just a matter of changing the `LED` define, adding the missing elements to the `pattern_data` configurations, and declaring where the new leds are connected in the `led_pins` array.
 
