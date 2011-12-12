@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Arduino led fun
+flattr: http://flattr.com/thing/450782/Arduino-led-fun
 ---
 
 Lately I've bought an [Arduino kit](http://www.sparkfun.com/products/10173) because I got interested by this platform, and above all because I was curious about experimenting with a technology capable of making the code I write on a laptop affect the environment where I actually live. Somebody calls it [ubuquitous computing](http://en.wikipedia.org/wiki/Ubiquitous_computing), others [ambient computing or intelligence](http://en.wikipedia.org/wiki/Ambient_intelligence). To me, for the moment, it's just an Arduino board with some wires and some electric components connected to my laptop.
