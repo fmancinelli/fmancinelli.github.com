@@ -18,7 +18,8 @@ article { display: block; }
  * Generic styling *
  *******************/
 body {
-    background: #FFFFFF url(/images/top-grad.png) repeat-x;
+    /*background: #FFFFFF url(/images/top-grad.png) repeat-x;*/
+    background-image: url(/images/background.png);
     font-family: "PT Serif";
     margin: 0px;
     padding: 0px;
