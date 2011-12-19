@@ -20,9 +20,10 @@ article { display: block; }
 body {
     /*background: #FFFFFF url(/images/top-grad.png) repeat-x;*/
     background-image: url(/images/background.png);
-    font-family: "PT Serif";
+    font-family: "Lora";
     margin: 0px;
     padding: 0px;
+    color: #393B40;
 }
 
 code {
@@ -128,7 +129,7 @@ section#posts h2 {
 
 section#posts h3 {
     color: #9F8158 ;
-    font-family: "PT Serif";
+    font-family: "Lora";
     font-size: 10pt;
     font-weight: normal;
     margin-top: -1px;
@@ -160,7 +161,7 @@ article.post header h1 {
 
 article.post header h2 {
     color: #9F8158;
-    font-family: "PT Serif";
+    font-family: "Lora";
     font-size: 10pt;
     font-weight: normal;
     margin: 0px;
