@@ -7,11 +7,11 @@ We are gradually transitioning towards a post-industrial economy, where manufact
 
 The "railway network" for this economy is the Internet, and their "steam machines" are the computers.
 
-However this comparison is flawed. Though a computer is actually a machine, it has a trait that is missing from other, more ordinary, machines: it's *universal*.
+However this comparison is flawed. Though a computer is actually a machine, it has a trait that is missing from other, more ordinary, ones: it's *universal*.
 
 To understand what this means, think about a washing machine and a dishwasher. They are built of very similar parts (i.e., a motor, a water pump, etc.) and have a quite similar purpose (i.e., washing), but you can't easily use a washing machine like a dishwasher and viceversa. 
 
-This is not true for computers. The same piece of hardware can in fact be turned into almost anything we want (depending on its physical limitations), just by changing the instructions it is going to execute.
+This is not true for computers. The same piece of hardware, in fact, can be turned into almost anything we want (depending on its physical limitations), just by changing the instructions it is going to execute.
 
 While it's very difficult to turn a pocket calculator into an alarm clock, it's quite easy to make the very same computer act like one of them.
 
@@ -29,7 +29,7 @@ It would be very painful but, in principle, we could write this function to mode
 
 The transition function of such a machine would define the logic for reading a properly encoded transition function from the tape, and then start to operate the machine as if it was bundled with the transition function that has just been read.
 
-Such a machine is called *[universal Turing machine](http://en.wikipedia.org/wiki/Universal_Turing_machine)* and it is able to simulate all the other machines. 
+Such a machine is called *[universal Turing machine](http://en.wikipedia.org/wiki/Universal_Turing_machine)* and it is able to simulate all the other ones. 
 
 This machine is the model of the computers we use every day, and that allow us to write documents, play games, make calculations and... set alarms.
 
@@ -47,7 +47,7 @@ Same story for an Android device or a set top box.
 
 How can you limit a *universal Turing machine?* Simply by complicating its transition function in order to prevent the execution of unwanted instructions.
 
-Translated to more down-to-earth terms: *digital rights management*, *spywares* and so on, running on our devices that prevent us to take full advantage of it.
+Translated to more down-to-earth terms: *digital rights management*, *spywares* and so on, running on our devices that prevent us to take full advantage of them.
 
 But this goes far beyond the single device. We might extend this reasoning to the Internet, which is an indispensable infrastructure for the post-industrial economy and can be rightfully considered as well as a global *universal Turing machine*.
 
