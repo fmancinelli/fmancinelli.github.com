@@ -29,7 +29,7 @@ It would be very painful but, in principle, we could write this function to mode
 
 The transition function of such a machine would define the logic for reading a properly encoded transition function from the tape, and then start to operate the machine as if it was bundled with the transition function that has just been read.
 
-Such a machine is called *universal Turing machine* and it is able to simulate all the other machines. 
+Such a machine is called *[universal Turing machine](http://en.wikipedia.org/wiki/Universal_Turing_machine)* and it is able to simulate all the other machines. 
 
 This machine is the model of the computers we use every day, and that allow us to write documents, play games, make calculations and... set alarms.
 
@@ -37,7 +37,7 @@ Going back to our post-industrial economy, why is this a threat?
 
 The problem is that since you have a *universal Turing machine* or, equivalently, a *Turing complete* device, you can use it to compute whatever function you want. In other words you can use it for running any program/application you want.
 
-It turns out that that the devices we use in our everyday life are *universal Turing machines:* from the smartphone in our pocket, to the set top box connected to our TV, from the ADSL modem, to the ebook reader. 
+It turns out that that the devices we use in our everyday life are *universal Turing machines:* from the smartphone in our pocket, to the set top box connected to our TV, from the ADSL modem, to the e-book reader. 
 
 However, post-industrial economy actors don't want their devices to be used as *universal Turing machines* because they want to control the information that can be manipulated on those devices.
 
@@ -47,9 +47,9 @@ Same story for an Android device or a set top box.
 
 How can you limit a *universal Turing machine?* Simply by complicating its transition function in order to prevent the execution of unwanted instructions.
 
-Translated more down-to-earth terms: *digital rights management*, *spywares* and so on, running on our devices that prevent us to take full advantage of it.
+Translated to more down-to-earth terms: *digital rights management*, *spywares* and so on, running on our devices that prevent us to take full advantage of it.
 
-But this goes far beyond the single device. We might extend this to the Internet, which is an indispensable infrastructure for the post-industrial economy and can be rightfully considered as well as a global *universal Turing machine*.
+But this goes far beyond the single device. We might extend this reasoning to the Internet, which is an indispensable infrastructure for the post-industrial economy and can be rightfully considered as well as a global *universal Turing machine*.
 
 Instead of limiting what can be executed on a single device, they are limiting what a device can communicate by blocking certain protocols, or routing.
 
