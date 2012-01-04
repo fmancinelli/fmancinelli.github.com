@@ -11,7 +11,7 @@ However this comparison is flawed. Though a computer is actually a machine, it h
 
 To understand what this means, think about a washing machine and a dishwasher. They are built of very similar parts (i.e., a motor, a water pump, etc.) and have a quite similar purpose (i.e., washing), but you can't easily use a washing machine like a dishwasher and viceversa. 
 
-This is not true for computers. The same piece of hardware can in fact be turned in almost anything we want (depending on the physical limitations of the hardware), just by changing the instructions it is going to execute.
+This is not true for computers. The same piece of hardware can in fact be turned into almost anything we want (depending on its physical limitations), just by changing the instructions it is going to execute.
 
 While it's very difficult to turn a pocket calculator into an alarm clock, it's quite easy to make the very same computer act like one of them.
 
@@ -39,7 +39,7 @@ The problem is that since you have a *universal Turing machine* or, equivalently
 
 It turns out that that the devices we use in our everyday life are *universal Turing machines:* from the smartphone in our pocket, to the set top box connected to our TV, from the ADSL modem, to the e-book reader. 
 
-However, post-industrial economy actors don't want their devices to be used as *universal Turing machines* because they want to control the information that can be manipulated on those devices.
+However, post-industrial economy actors don't want their devices to be used as *universal Turing machines* because they want to control the information that can be manipulated on them.
 
 So, your iPhone, while it's perfectly capable of running whatever operating system you might want to run on it, is limited to iOS. It could also run whatever application written for iOS, but it's limited to those available on the App Store.
 
@@ -51,13 +51,13 @@ Translated to more down-to-earth terms: *digital rights management*, *spywares* 
 
 But this goes far beyond the single device. We might extend this reasoning to the Internet, which is an indispensable infrastructure for the post-industrial economy and can be rightfully considered as well as a global *universal Turing machine*.
 
-Instead of limiting what can be executed on a single device, they are limiting what a device can communicate by blocking certain protocols, or routing.
+Instead of limiting what can be executed on a single device, they are limiting what a device can communicate by blocking certain protocols or routing.
 
 Translated to more down-to-earth terms: *[China's great firewall](http://it.wikipedia.org/wiki/Great_Firewall)*, *[Stop Online Piracy Act](http://en.wikipedia.org/wiki/Stop_Online_Piracy_Act)* and so on.
 
 *Universal Turing machines* are the foundation of our post-industrial economy but their power represents also the biggest threat to those who want to manage that economy. And they are doing all they can to cripple them and our freedom.
 
-There is a *war on general purpose computation* that is already taken place. We should better prepare to fight in order to defend our freedom to be *universal*.
+There is a *war on general purpose computation* that is already taking place. We should better prepare to fight in order to defend our freedom to be *universal*.
 
 <object width="560" height="315">
 <param name="movie" value="http://www.youtube.com/v/HUEvRyemKSg?version=3&amp;hl=en_US"></param>
