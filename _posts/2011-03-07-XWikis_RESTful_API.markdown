@@ -266,7 +266,7 @@ Sometimes modifying only the content is not enough...
 
 {% highlight xml %}
 $ curl -u Admin:admin -X PUT -H "Content-type: text/plain" -H "Accept: application/xml" 
-       -d "@content.xml" http://localhost:8080/xwiki/rest/wikis/xwiki/spaces/Main/pages/WebHome
+       --data-binary "@content.xml" http://localhost:8080/xwiki/rest/wikis/xwiki/spaces/Main/pages/WebHome
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <page xmlns="http://www.xwiki.org">
   ...
@@ -285,7 +285,7 @@ where content.xml contains
 </page>
 {% endhighlight %}
 
-In this case we have sent an *XML* representation that contains also the new title for the page.
+In this case we have sent an *XML* representation that contains also the new title for the page. We also used the `--data-binary` switch for preserving the text formatting, otherwise curl will remove line-endings making things a bit messy (thanks to Jason Carter for noticing it :)) 
 
 Another useful representation for modifying resources is the `x-www-form-urlencoded`.
 
