@@ -285,7 +285,7 @@ where content.xml contains
 </page>
 {% endhighlight %}
 
-In this case we have sent an *XML* representation that contains also the new title for the page. We also used the `--data-binary` switch for preserving the text formatting, otherwise curl will remove line-endings making things a bit messy (thanks to Jason Carter for noticing it :)) 
+In this case we have sent an *XML* representation that contains also the new title for the page. We also used the `--data-binary` switch for preserving the text formatting, otherwise curl will remove line-endings making things a bit messy (thanks to Jason Cater for noticing it :)) 
 
 Another useful representation for modifying resources is the `x-www-form-urlencoded`.
 
