@@ -7,7 +7,7 @@ I've decided to open a "companion site" for this blog. The purpose of this site 
 
 I currently use Twitter, Facebook and Google+ for this kind of activity, but I liked the idea of having a place where to "centralize" all this information.
 
-<p><a href="http://www.tubmlr.com">Tumblr</a> seems to be the perfect tool for doing this. For this reasong the new site is called : <a href="http://bitloomblr.tumblr.com">Bitloom<sub>blr</sub></a></p>
+Tumblr seems to be the perfect tool for doing this. For this reasong the new site is called : Bitloom<sub>blr</sub>
 
 So what will you find on Bitloom? I will continue to post here (longish) articles that come from my reflections and experiences, and are written completely by myself. Basically a standard blog :)
 
