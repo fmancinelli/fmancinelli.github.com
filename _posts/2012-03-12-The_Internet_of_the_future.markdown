@@ -15,17 +15,19 @@ This is how a small portion of the internet looks like:
 
 [![The Internet as a graph](/images/internet.png)](http://en.wikipedia.org/wiki/Network_mapping)
 
-Without considering the end-user terminal such as, for example, the laptop or the mobile phone that you're using for reading this post, we can see that the nodes in that graph are *autonomous systems*.
+If we don't consider the end-user terminals such as, for example, the laptop or the mobile phone you're using for reading this post, we can see that the nodes in that graph are *autonomous systems*.
 
 An *autonomous system* is "a collection of connected Internet Protocol (IP) routing prefixes under the control of one or more network operators that presents a common, clearly defined routing policy to the Internet." ([Wikipedia](http://en.wikipedia.org/wiki/Autonomous_system_(Internet))
 
-Your *Internet Service Provider* is an autonomous system, but also your University of the entity that coordinates the University network. In 2010 there were almost 35000 of them.
+Your *Internet Service Provider* is an autonomous system, but also Universities or the entity that coordinates Research Centers' network.
 
-If you want to have an idea of what kind of *autonomous systems* are registered on the Internet, you can have a look at [this list](http://as-rank.caida.org/?mode0=as-dump-info) compiled by [CAIDA](http://www.caida.org), the *Cooperative Association for Internet Data Analysis*.
+In 2010 there were almost 35000 connected *autonomous systems*.
 
-Now what is the problem with this? The problem is what happened in Egypt during the Arab Spring: at some point they shut down the Internet. Literally.
+If you want to have an idea of what kind of *autonomous systems* are registered on the *Internet*, you can have a look at [this list](http://as-rank.caida.org/?mode0=as-dump-info) compiled by [CAIDA](http://www.caida.org), the *Cooperative Association for Internet Data Analysis*.
 
-How was this possible? Order to the major Egyptian service provider to cut the connection to the other *autonomous systems* and nobody will be able to send or receive a packet from the Internet. Order to the major service providers to stop routing packets from within the *autonomous system* and nobody will be able to send or receive a packet from his neighbor. Simple like that.
+Now what is the problem with this? The problem is what happened in Egypt during the Arab Spring: at some point they shut down the *Internet*. Literally.
+
+How was this possible? Order to the major Egyptian service provider to cut the connection to other *autonomous systems* and nobody will be able to send or receive a packet from the *Internet*. Order to the major service providers to stop routing packets from within the *autonomous system* and nobody will be able to send or receive a packet from his neighbor. Simple like that.
 
 This is something that could happen everywhere, because *Internet* works in the same way in Egypt, in the US, in Europe and also in China.
 
@@ -37,17 +39,19 @@ In my opinion it will be something that resembles to the network that connected 
 
 Basically, it was a network of *BBSes* that were storing and forwarding messages at each connection. A message sent from a node, could travel for days (because *BBSes* were exchanging data only few times per day) before reaching the destination. Imagine if an email takes a week to be answered which, by the way, was the case at that time on *FIDONet*.
 
-The advantage of this system was that it couldn't be brought down, because bringing it down would mean to shut down the telephone network which is quite more complicated than rewriting some [BGP](http://en.wikipedia.org/wiki/Border_Gateway_Protocol) tables.
+The advantage of this system was that it couldn't be brought down, because bringing it down would mean to shut down the telephone network, which is quite more complicated than rewriting some [BGP](http://en.wikipedia.org/wiki/Border_Gateway_Protocol) tables.
 
 Of course *BBSes* could have been shut down as well, but message routing could have been reconfigured accordingly.
 
-Today, however, we are in an even more interesting scenario. We don't even need the telephone network for doing something like this. We have wireless access points that can replace telephone land lines. By using wireless technology a mesh of communicating devices that are able to exchange information like *BBSes* connected through *FIDONet* were able to, more than 30 years ago. Peer to peer protocols could automate a bit the job of correctly routing information to the good destination (remember [Gnutella](http://en.wikipedia.org/wiki/Gnutella)?)
+Today, however, we are in an even more interesting scenario. We don't even need the telephone network for doing something like this. We have wireless access points that can replace telephone land lines. By using wireless technology, we can build a mesh of communicating devices that are able to exchange information like *BBSes* connected through *FIDONet* were able to, more than 30 years ago. 
+
+Peer to peer protocols could automate a bit the job of correctly routing information to the good destination (remember [Gnutella](http://en.wikipedia.org/wiki/Gnutella)?)
 
 Of course, you can forget what the *Internet* of today offers us: immediate reply to every request, interactive applications, huge data transfer.
 
-The *Internet* of the future could be developed as a wireless mesh of interconnected networking devices that are able to route information similarly to how it is done today on the *Internet* but with no central authority capable of shutting it down.
+The free (as in freedom) *Internet* of the future could be developed as a wireless mesh of interconnected networking devices that are able to route information similarly to how it is done today on the *Internet*, but with no central authority capable of shutting it down.
 
-Luckily for us electromagnetic waves are way more elusive than *BGP* tables.
+In fact, and luckily for us, electromagnetic waves are way more elusive than *BGP* tables.
 
 This would truly be a free (as in freedom) and democratic *Internet*... And maybe will also solve the information overload we are experiencing nowadays.
 
