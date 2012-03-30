@@ -47,7 +47,7 @@ The experiment I described before was very eye-opening. It was about content con
 
 This is very important because today we are constantly interrupted. And this prevents us to concentrate and to work effectively and productively.
 
-Cutting off social network sites, reducing content consumption (e.g., by reserving well defined daily or weekly time-slots to this activity), stopping to multitask and focus as much and for as long as possible on a single task is something very beneficial. Creativity (you will need to find ways to make use of your time once you don't have the content consumption filler) and overall quality of your work will surely improve.
+Cutting off social network sites, reducing content consumption (e.g., by reserving well defined daily or weekly time-slots for this activity), stopping to multitask and focus as much and for as long as possible on a single task is something very beneficial. Creativity (you will need to find ways to make use of your time once you don't have the content consumption filler) and overall quality of your work will surely improve.
 
 Subscribing to periodic publications like [Hacker montly](http://hackermonthly.com/) or using techniques like the [Pomodoro technique](http://www.pomodorotechnique.com/) could help a lot in achieving these objectives. 
 
