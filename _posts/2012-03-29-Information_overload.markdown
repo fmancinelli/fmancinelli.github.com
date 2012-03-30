@@ -3,7 +3,9 @@ layout: post
 title: Information overload, an experiment and some related thoughts
 ---
 
-Some time ago I did an experiment: completely disconnect from all kind of social networks for 30 days. I wrote a report about that in Italian, but since I think it's an interesting read about something I consider a very serious problem, I am going to translate and republish it here. The original is available [here](http://bonifacemillian.tumblr.com/post/14418713592/social-networks-detox-was-dieta)
+ Some time ago I did an experiment: completely disconnect from all kind of social networks for 30 days. 
+
+I wrote a report about that in Italian, but since I think it's an interesting read about something I consider a very serious problem, I am going to translate and republish it here. The original is available [here](http://bonifacemillian.tumblr.com/post/14418713592/social-networks-detox-was-dieta).
 
 Social networks detox
 ---------------------
