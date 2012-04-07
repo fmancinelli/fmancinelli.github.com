@@ -3,11 +3,14 @@ layout: post
 title: XWiki in the cloud
 ---
 
-The [XWiki Platform Cloud](https://github.com/xwiki-contrib/xwiki-platform-cloud) project is an extenstion that allows XWiki to be deployed on cloud environments.
+The [XWiki Platform Cloud](https://github.com/xwiki-contrib/xwiki-platform-cloud) is a project I contributed to develop in the context of research activities we are doing at [XWiki](http://www.xwiki.com).
+
+It is an extenstion that allows XWiki to be deployed on cloud environments.
 
 There are two main ideas behind this extension:
 
 * To provide XWiki with the ability to dynamically configure itself by using parameters coming from the cloud environment.
+
 * To use services that are made available in the context of a cloud environment.
 
 The first point is about the retrieval of configuration parameters that are usually passed using environment variables, either through the *JVM* or the operating system.
