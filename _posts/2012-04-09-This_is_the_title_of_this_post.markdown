@@ -29,7 +29,7 @@ This sentence reveals, at last, that this is not really a post.
 
 <div style="font-size: 0.7em">
 <p>I didn't go crazy... This was just a little experiment about self-reference inspired (maybe too much) by the first two chapters of the book <a href="http://en.wikipedia.org/wiki/Metamagical_Themas">Metamagical Themas</a> by <a href="http://en.wikipedia.org/wiki/Douglas_Hofstadter">Douglas Hofstadter</a>, and in particular by a <a href="http://consc.net/misc/moser.html">self-referential story written by David Moser</a>.</p>
-<p>I particularly like the paradoxical ending</p>
+<p>I particularly like the paradoxical ending.</p>
 <p>To properly conclude this post(-scriptum), <a href="#">this is a self-referential link</a>.</p>
 </div>
 
