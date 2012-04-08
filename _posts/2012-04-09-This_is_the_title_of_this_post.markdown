@@ -23,7 +23,7 @@ This sentence will end when you will read the word end.
 
 This sentence introduces the next one that will finally reveal what this post is about.
 
-This sentence reveals, at last, that this is not really a post.
+This sentence reveals, at last, that this is not really a blog post.
 
 ---
 
