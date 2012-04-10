@@ -15,7 +15,7 @@ This sentence introduces what the rest of the post will be about.
 
 The purpose of this sentence is to temporize a bit about introducing the topic of this post, in order to keep the reader reading.
 
-This sentence apologize about the fact of having used such a childish trick for keeping the reader reading, without actually providing any additional infomation.
+This sentence apologizes about the fact of having used such a childish trick for keeping the reader reading, without actually providing any additional infomation.
 
 This is a filler sentence. Again.
 
