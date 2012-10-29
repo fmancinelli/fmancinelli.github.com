@@ -1,0 +1,34 @@
+---
+layout: post
+title: Coursera
+---
+
+During the last summer I read about [Coursera](http://www.coursera.org), a new startup that was offering high-quality courses from top (mostly) American Unversities for free. Sounded too good to be true... but it turned out that it actually was that good (and even more).
+
+I had a quick look at the list of the available courses and it was mind blowing: Math, Computer Science, Economics, Physics, even Medicine. A Disneyland for the curious mind.
+
+I immediately subscribed to at least four courses that I was willing to follow. The first one was Stanford's Machine Learning, taught by Prof. Andrew Ng (who recently was featured in the news because it took part to the design and deployment of a [huge neural network](http://www.nytimes.com/2012/06/26/technology/in-a-big-network-of-computers-evidence-of-machine-learning.html?pagewanted=all))
+
+But pretty soon it became clear that I would have had to drop the other courses because the Machine Learning course was quite demanding, and I would not have had the time to do more.
+
+I was impressed by the quality of the course material (Prof. Ng is a great teacher), and overall by the Coursera system.
+
+There are videos split in 15 minutes chunks, each one about a very well-identified topic. You can stream them or download them for watching them offline (e.g., I used to watch a lot of video during my daily commute in order to have a "preview" of what they were about)
+
+Every week you have to answer to review questions and do programming exercises, in order to assess your understanding. There are **hard** deadline to do so, otherwise you won't get the full score. This means that you have to study regularly during the week. And if you have a day job, this means: during the night :)
+
+I think that this kind of initiatives the posing the basis for future education, and I am happy to live in a world where this is happening. It's interesing also to look at the Coursera's mission:
+
+> We envision a future where the top universities are educating not only thousands of students, but millions. Our technology enables the best professors to teach tens or hundreds of thousands of students.
+>
+>Through this, we hope to give everyone access to the world-class education that has so far been available only to a select few. We want to empower people with education that will improve their lives, the lives of their families, and the communities they live in.
+
+Definitely a great goal.
+
+I was quite skeptical about online learning systems, but after this first experience I am more positive about them. And I think that Coursera is doing it right.
+
+I encourage you to have a look at the [long list of courses](https://www.coursera.org/courses) and to enroll... you won't regret. 
+
+And if you are interested in Machine Learning I really recommend you Prof. Ng's course. It's one of the best courses I have followed.
+
+Happy studying!
