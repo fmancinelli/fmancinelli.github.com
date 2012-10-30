@@ -13,9 +13,9 @@ But pretty soon it became clear that I would have had to drop the other courses 
 
 I was impressed by the quality of the course material (Prof. Ng is a great teacher), and overall by the Coursera platform.
 
-There are videos split in 15 minutes chunks, each one about a very well-identified topic. You can stream them or download them for watching them offline (e.g., I used to watch a lot of video during my daily commute in order to have a "preview" of what they were about)
+There are videos split in 15 minutes chunks, each one about a very well-identified topic. You can stream them or download them for offline watching (e.g., I used to watch a lot of video during my daily commute in order to have a "preview" of what they were about)
 
-Every week you have to answer to review questions and do programming exercises, in order to assess your level of understanding. There are **hard** deadline to do so, otherwise you won't get the full score. This means that you have to study regularly during the week. And if you have a day job, this means: during the night :)
+Every week you have to answer to review questions and do programming exercises in order to assess your level of understanding. There are **hard** deadline to do so, otherwise you won't get the full score. This means that you have to study regularly during the week, and if you have a day job this means "at night" :)
 
 I think that this kind of initiatives are posing the basis for future education, and this is clearly stated in Coursera's mission:
 
