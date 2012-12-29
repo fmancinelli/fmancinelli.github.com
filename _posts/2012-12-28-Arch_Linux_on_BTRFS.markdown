@@ -138,7 +138,9 @@ This is a [fairly standard way](https://wiki.archlinux.org/index.php/Security#Pa
 
 We will mount `home`, `opt`, `var` in the corresponding directories of the `ROOT` subvolume.
 
-But there's a twist: in fact, the `var` subvolume will then contain the `lib` directory where `pacman`, the Arch Linux package manager, store information about the installed packages.  In order to have a complete *snapshot* of the system we must include this directory. So we have to make sure that the `var/lib` directory (and only this) *is* on the `ROOT` subvolume. We will achieve this by binding the `var/lib` directory on the `ROOT` subvolume to the one on the `var` subvolume:
+But there's a catch: the `var` subvolume will contain the `lib` directory where `pacman`, the Arch Linux package manager, stores information about the installed packages.  In order to have a complete *snapshot* of the system we must include this directory. So we have to make sure that the `var/lib` directory (and only this) *is* on the `ROOT` subvolume. 
+
+We will achieve this by binding the `var/lib` directory on the `ROOT` subvolume to the one on the `var` subvolume:
 
 {% highlight bash %}
 mkdir -p /mnt/btrfs/__snapshot
@@ -163,7 +165,7 @@ ID 261 gen 5 parent 5 top level 5 path __current/var
 
 ### 3. Mount subvolumes
 
-In this step we will mount the `__current/ROOT`, in a given location so that we can install the base system on it. We will also mount `__current/home`, `__current/opt`, and `__current/var` on the corresponding directories in the `ROOT` subvolume.
+In this step we will mount the `__current/ROOT`, in a given location so that we can install the base system on it. We will also mount `__current/home`, `__current/opt`, and `__current/var` on the corresponding directories in the `__current/ROOT` subvolume.
 
 First let's create a directory where to mount `__current/ROOT`:
 
@@ -188,7 +190,7 @@ $ mount -o defaults,relatime,discard,ssd,nodev,nosuid,subvol=__current/opt /dev/
 $ mount -o defaults,relatime,discard,ssd,nodev,nosuid,noexec,subvol=__current/var /dev/sda1 /mnt/btrfs-current/var
 {% endhighlight %}
 
-At this point we have all the filesystem mounted. However the `/var/lib` directory resides on the `__current/var` subvolume, while we would like to use the `var/lib` directory on `__current/ROOT`.
+At this point we have all the filesystems mounted. However the `/var/lib` directory resides on the `__current/var` subvolume, while we would like to use the `var/lib` directory on `__current/ROOT`.
 
 In order to do so, we do the following:
 
@@ -333,11 +335,11 @@ $ btrfs subvolume snapshot /run/btrf-root/__snapshot/ROOT@20121227-163413 /run/b
 $ reboot
 {% endhighlight %}
 
-When the system reboots, it will be like if it was just installed. Of course the `/home`, `/opt` and `/var` (except `/var/lib`) might contain additional stuff because they were not part of the snapshot. But the system will be in its pristine state because all the relevant part and configurations were snapshotted.
+When the system reboots, it will be like if it was just installed. Of course the `/home`, `/opt` and `/var` (except `/var/lib`) might contain additional stuff because they were not part of the snapshot. But the system will be in its pristine state because all its relevant parts and configurations were included in the snapshot.
 
 Now, if we want, we can also remove the `__current/ROOT.old` subvolume.
 
-### Upgrading the system
+### Safely upgrading the system
 
 A snapshot of `__current/ROOT` could be taken just before every system upgrade. If the upgrade succeeds, then we can remove it otherwise we can roll back to the previous system state and retry the upgrade, maybe after having fixed what made the upgrade fail.
 
@@ -345,7 +347,7 @@ This process could be also automated with a simple script which basically does s
 
 ### Using snapshots for improving system security
 
-Snapshots can be very useful to understand what changed in a system and whether our system has been compromised. For example, if we have a "trusted" snapshot, like the one taken just after the system has been installed, we can compare the current state of the system against that *previous* state and check if binaries, configuration files or libraries have changed when they shouldn't.
+Snapshots can be very useful to understand what changed in a system and whether our system has been compromised. For example, if we have a *"trusted"* snapshot, like the one taken just after the system has been installed, we can compare the current state of the system against that *previous* state and check if binaries, configuration files or libraries have changed when they shouldn't.
 
 <div style="text-align: center; width: 100%">
   <div style="margin: 0px auto 0px"> 
@@ -361,7 +363,7 @@ Snapshots can be very useful to understand what changed in a system and whether 
   </div>
 </div>
 
-In the previous pictures (click on them for a larger version), we used a diff tool like [Meld](https://www.archlinux.org/packages/extra/any/meld/) to compare directories and files. We can see that many things changed in `/etc/`, including `groups`.
+In the previous pictures (click on them for a larger version), I used a diff tool called [Meld](https://www.archlinux.org/packages/extra/any/meld/) to compare directories and files. We can see that many things changed in `/etc/`, including `groups`.
 
 This could be quite alarming because usually this file should not be touched. Looking at the actual changes we see that groups for `gdm`, `avahi`, etc. were added: that's OK if we have installed GNOME. So everything is fine.
 
@@ -373,9 +375,9 @@ With BTRFS users can also create subvolumes (though only `root` can delete them)
 
 Usually revision control systems like [Git](http://git-scm.com/) are more suitable for doing this kind of tracking, but if we have to manage a lot of binary data BTRFS snapshotting could be a valid alternative.
 
-Think for example to video editing: a user might want to track the state of her work, so she can want to put all the files related to a given project in a separate subvolume and take regular snapshots as her work progresses.
+Think for example to video editing. A user might want to track the state of her work, so she can put all the files related to a given project in a separate subvolume and take regular snapshots as her work progresses.
 
-Snapshotting can also be useful when dealing with virtual machines. Online cloud services like Amazon EC2 already has this kind of feature for incrementally building virtual machine images by taking subsequent snapshots of it. With BTRFS a user can apply the same principle by putting the virtual machine image in a separate subvolume and incrementally install the system by taking intermediate snapshots.
+Snapshotting can also be useful when dealing with virtual machines. Online cloud services, like Amazon EC2, already have this kind of feature for incrementally building virtual machine images by taking subsequent snapshots of it. With BTRFS a user can apply the same principle by putting the virtual machine image in a separate subvolume and incrementally install the system by taking intermediate snapshots.
 
 # Conclusion
 
