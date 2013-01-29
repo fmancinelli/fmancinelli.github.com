@@ -5,7 +5,7 @@ title: A nice story about Open Source
 
 Something like this probably has happened millions of times because it's the very essence of Open Source collaboration... But when it happens to you directly it's really awesome.
 
-I write Open Source Software as a contributor for fun and profit: for fun because I like to program; for profit because I have the chance to work for an awesome company where Open Source Software is one of the values it is built upon: we use, contribute and create Open Source Software. By the way, the company is [XWiki SAS](http://www.xwiki.com) and is one of the top contributor to the [XWiki](http://www.xwiki.org) Open Source project.
+I write Open Source Software as a contributor for fun and profit: for fun because I like to program; for profit because I have the chance to work for an awesome company where Open Source Software is one of the values it is built upon: we use, contribute and create Open Source Software. By the way, the company is [XWiki SAS](http://www.xwiki.com) and is one of the top contributors to the [XWiki](http://www.xwiki.org) Open Source project.
 
 Lately I've spent some time during the weekends developing little projects to play and learn some new technologies. In particular I've focused on [Gnome Shell](http://www.gnome.org/gnome-3/) and its Javascript-based extension development environment.
 
