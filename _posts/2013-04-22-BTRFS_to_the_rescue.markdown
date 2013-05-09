@@ -17,7 +17,7 @@ This was the perfect situation for reverting things back. I just needed to retri
 
 Once retrieved the snapshot name, I just edited on the fly the Grub boot command and... Arch booting as usual, as if the upgrade didn't take place! 
 
-Today I have been very glad of having spent some time trying to devising the setup that allowed me to operate in this way. There was only a missing thing... Having a snapshot with an easy-to-remember name. 
+Today I have been very glad of having spent some time trying to devise the setup that allowed me to operate in this way. There was only a missing thing... Having a snapshot with an easy-to-remember name. 
 
 So I have improved the script I usually run before any upgrade. Now it takes two snapshots of the current state: one whose name has the timestamp, and one that is always called `LATEST`. In this way booting using the previous state would be straightforward.
 
