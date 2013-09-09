@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [NTS] Maven Remote Resources
+title: (NTS) Maven Remote Resources
 ---
 
 The [Maven Remote Resources plugin](http://maven.apache.org/plugins/maven-remote-resources-plugin) allows you to package a given set of resources in a JAR in a way that they can be used by other modules. This is particularly useful if you have some "configuration" files that must be shared between different modules.
